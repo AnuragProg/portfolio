@@ -7,6 +7,7 @@ import Image from 'next/image';
 const Lottie = dynamic(()=>import('lottie-react'), {ssr: false});
 
 export default function Hero(){
+    const resumeUrl = `https://drive.google.com/file/d/140UGEfeIo5V-RA6Odal5RM5dIfplgKra/view?usp=sharing`;
     return (
         <section className="w-full flex-grow flex flex-col md:flex-row justify-around items-center p-4 z-0">
             <Lottie 
@@ -21,14 +22,14 @@ export default function Hero(){
                 <p className="max-w-[600px] text-muted-foreground md:text-lg">
                     Hey there, got some time to visit this site, lemme tell you about myself, I am Anurag, with a passion for building stuff and solving problems and it just so happens to be through software.
                 </p>
-                <Link href="/AnuragResume.pdf" download className="flex justify-center items-center space-x-2 px-6 py-4 bg-blue-500 text-white rounded-xl hover:bg-blue-700 font-bold">
-                    <Image 
+                <Link target="_blank" href={resumeUrl} className="flex justify-center items-center space-x-2 px-6 py-4 bg-blue-500 text-white rounded-xl hover:bg-blue-700 font-bold">
+            {/*<Image 
                         src={'/download.svg'}
                         alt=''
                         height={25}
                         width={25}
-                    />
-                    <span>Download Resume</span>
+                    /> */}
+                    <span>Resume</span>
                 </Link>
             </div>
         </section>
