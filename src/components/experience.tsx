@@ -1,17 +1,19 @@
 
+
 export default function Experience(){
     const exps = [
         {
-            timeline: 'Apr 2024 - Present',
+            timeline: 'Apr 2024 - Jan 2025',
             position: 'Backend Developer Intern',
             company: 'Contineu AI',
-            description: 'Building backend for construction project management platform',
+            // description: 'Building backend for construction project management platform',
+            description: 'Built scalable Golang backend services for client and ML applications, while managing AWS infrastructure using EC2, DynamoDB, S3, and EventBridge.'
         },
         {
             timeline: 'Apr 2023 - Aug 2023',
             position: 'Full Stack Developer Intern',
             company: 'Isostats Energy',
-            description: "Built a mark calculation application to calculate mark values for United State's MISO Market",
+            description: "Built a Next.js and JavaScript application for FTR contract valuation, integrated financial and historical data workflows for MISO, and managed deployment and scaling on AWS EC2.",
         },
         {
             timeline: 'Sep 2022 - Feb 2023',
